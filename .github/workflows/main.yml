@@ -10,6 +10,8 @@ jobs:
         run: pwd
       - name: content
         run: ls -l
+      - name: env
+        run: printenv
       - uses: ./action-a
         with:
           MY_NAME: "Spock"
